@@ -1,0 +1,23 @@
+<html>
+<body>
+  <h2>Methods</h2>
+
+  <p id="band"></p>
+
+  <script>
+   //create our object
+   var band = {
+     bandName: "OneOkRock",
+     genre: "Rock",
+     originCity: "Tokyo",
+     id: 5566
+
+     fullName: function() {
+       return this.bandName + " " + this.genre
+   };
+
+   //Display results
+   document.getElementById("band").innerHTML = bandName.fullName();
+ </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<body>
+  <h2>Browser Locaiton</h2>
+
+  <p id="browser"></p>
+
+  <script>
+    document.getElementById("browser").innerHTML =
+    "The full URL of this page is:<br>" + window.location.href;
+  </script>
+
+
+<h2>Browser GoBack and GoFoward</h2>
+  <button onclick="goBack()">Go Back</button>
+  <button onClick="goFoward()">Go Foward</button>
+
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+
+  <script>
+  function goFoward() {
+    window.history.foward();
+  }
+  </script>
+
+
+  <h2>Redirect</h2>
+
+  <input type="button" value="Load website new page" onclick="newPage()">
+  <input type="button" value="Load website existing page" onClick="existingPage()">
+
+  <script>
+    function newPage(){
+      //open new tab
+      window.open("https://kbunsha.com/america/mystory/story03","_blank");
+    }
+  </script>
+
+  <script>
+   function existingPage(){
+     //existing tab
+     window.location.assign("https://kbunsha.com/america/mystory/story03");
+   }
+  </script>
+
+
+  <h2>Timing</h2>
+    <button onclick='setTimeout(funcStart,4000);'>Run</button>
+    <script>
+      function funcStart() {
+        alert('Thanks for visiting my webpage');
+      }
+    </script>
+</body>
+</html>
