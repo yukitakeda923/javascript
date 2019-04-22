@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <!-- Script here maybe :)? -->
+  <script type="text/Javascript" src="script.js"></script>
+<body>
+<h2>Constructors</h2>
+<!--Provide a id here-->
+
+<p id="class"></p>
+
+<script>
+
+// Constructor function for College objects
+  function Class(collegeyear,coursename,coursenumber,credit) {
+    this.collegeyear = collegeyear;
+    this.coursename = coursename;
+    this.coursenumber = coursenumber;
+    this.credit = credit;
+}
+
+// Create variable object
+var course = new Class("senior","cmps",162,3);
+//Display Output
+document.getElementById('class').innerHTML =
+"My favorite course is " + course.coursename + " " + course.coursenumber;
+
+//Display Output
+
+</script>
+
+<!-- add buttons for Change Text and Refresh Screen -->
+<button type="button" onclick="alterText()">Change Text</button>
+<button type="button" onclick="refresh()">Reload</button>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162 Finals Question 1</title>
+<script>
+
+function getRandomCharacter(inputString) {
+
+  // implement your program here
+   var text = " ";
+   var possible;
+   for (var j =0; j < input.length; j++){
+     if(input[j] == ""){
+       possible = ' ';
+  } else if ((input[j] == input[j].toUpperCase()) && (input[j] != input[j].toLowerCase())) {
+    possible = "ABCDEFGHIJKLMNOPQRSTUVWZ";
+  } else if ((input[j] == input[j].toLowerCase()) && (input[j] != input[j].toUpperCase())) {
+    possible = "abcdefghijklmnopqrstuvwxyz";
+  } else if = ('0123456789'.index0f (input[j]) ! == -1) {
+    possible = "0123456789";
+  } else{
+    possible = "$%#@";
+  }
+  text += possile.charAt(Math.floor(Math.random() * possible.length)));
+  }
+  // ...
+
+  // this return is a placeholder (you should change it!)
+
+  return "a";
+
+}
+
+// the following alert should show a random character, e.g., 'r'
+
+alert(getRandomCharacter("PPU Rocks"));
+
+// the following alert should show a random character, e.g., 'W'
+// most of the time it should be different from the first alert
+
+alert(getRandomCharacter("PPUROCKSMORE"));
+
+</script>
+<body>
+</body>
+</html>

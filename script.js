@@ -20,8 +20,8 @@ function refresh(){
 
 //this is for the 5.html file
 function alterText(){
-  document.getElementById("persons").style.fontSize = "7em";
-  document.getElementById("persons").style.fontStyle = "Italic";
-  document.getElementById("persons").style.backgroundColor = "yellow";
-  document.getElementById("persons").style.fontweight = "bold";
+  document.getElementById("class").style.fontSize = "7em";
+  document.getElementById("class").style.fontStyle = "Italic";
+  document.getElementById("class").style.backgroundColor = "yellow";
+  document.getElementById("class").style.fontweight = "bold";
 }
